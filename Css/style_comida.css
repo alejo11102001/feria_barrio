@@ -1,0 +1,142 @@
+/* ========== Reset básico ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--fondo-claro);
+    color: #2E2E2E;
+}
+
+/* ========== Variables ========== */
+:root {
+    --rojo: #D3362D;
+    --naranja: #F4891F;
+    --amarillo: #F6B12F;
+    --verde: #2E8B57;
+    --verde-oscuro: #125C31;
+    --fondo-claro: #FFE5A1;
+}
+
+/* ========== Header ========== */
+.Card__Header {
+    background-color: var(--naranja);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.Header__Title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.Header__Navegation {
+    margin-top: 1rem;
+}
+
+.Navegation__Menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.Menu__Option {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.Menu__Option:hover {
+    color: var(--amarillo);
+}
+
+/* ========== Main ========== */
+.Card__Main {
+    padding: 2rem;
+    background-color: var(--fondo-claro);
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.Main__Section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.Section__Div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.Section__Div:hover {
+    transform: translateY(-10px);
+}
+
+.Section__Div img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.Div__Title {
+    font-size: 1.5rem;
+    color: var(--rojo);
+    margin-bottom: 0.75rem;
+}
+
+.Div__Description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.precio {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--verde-oscuro);
+}
+
+.Div__Link {
+    display: inline-block;
+    background-color: var(--verde);
+    color: white;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Div__Link:hover {
+    background-color: var(--verde-oscuro);
+}
+
+/* ========== Footer ========== */
+.Card__Footer {
+    background-color: var(--rojo);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
