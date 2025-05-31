@@ -171,3 +171,77 @@ body {
 .Footer__Div .Div__Description {
     margin: 0.5rem 0;
 }
+
+/* ========== Responsive - Móviles ========== */
+@media screen and (max-width: 600px) {
+    /* Portada */
+    .Card__Section {
+        height: auto;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .Section__Button {
+        margin-top: 2rem;
+        padding: 0.75em 1.5em;
+        font-size: 0.95rem;
+    }
+
+    /* Header */
+    .Card__Header {
+        padding: 1rem;
+    }
+
+    .Header__Title {
+        font-size: 1.5rem;
+    }
+
+    .Navegation__Menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .Menu__Option {
+        font-size: 1rem;
+    }
+
+    /* Main */
+    .Card__Main {
+        padding: 1rem;
+    }
+
+    .Main__Section {
+        padding: 1rem;
+        border-radius: 25px;
+    }
+
+    .Div__Title {
+        font-size: 1.4rem;
+    }
+
+    .Div__Description {
+        font-size: 0.95rem;
+    }
+
+    .Div__Link {
+        padding: 0.6em 1.2em;
+        font-size: 0.95rem;
+    }
+
+    .Section__Title {
+        font-size: 1.25rem;
+    }
+
+    .Section__Menu {
+        padding-left: 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .Card__Footer {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+}

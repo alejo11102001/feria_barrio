@@ -36,6 +36,7 @@ body {
 .Header__Title {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: #000000;
 }
 
 .Header__Navegation {
@@ -52,9 +53,10 @@ body {
 
 .Menu__Option {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
     transition: color 0.3s ease;
+    list-style: none;
 }
 
 .Menu__Option:hover {
@@ -138,5 +140,62 @@ body {
     background-color: var(--rojo);
     color: #fff;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
 }
+
+.Footer__Div .Div__Description_F {
+    margin: 0.5rem 0;
+}
+
+/* ========== Responsive - Móviles ========== */
+@media screen and (max-width: 600px) {
+    .Card__Header {
+        padding: 1rem;
+    }
+
+    .Header__Title {
+        font-size: 1.5rem;
+    }
+
+    .Navegation__Menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .Card__Main {
+        padding: 1rem;
+    }
+
+    .Main__Section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .Section__Div {
+        padding: 1rem;
+    }
+
+    .Div__Title {
+        font-size: 1.25rem;
+    }
+
+    .Div__Description {
+        font-size: 0.95rem;
+    }
+
+    .precio {
+        font-size: 1rem;
+    }
+
+    .Div__Link {
+        padding: 0.6em 1.2em;
+        font-size: 0.95rem;
+    }
+
+    .Card__Footer {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+}
+
