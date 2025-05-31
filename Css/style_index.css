@@ -71,6 +71,7 @@ body {
 .Header__Title {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: #000000;
 }
 
 .Header__Navegation {
@@ -87,9 +88,10 @@ body {
 
 .Menu__Option {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
     transition: color 0.3s ease;
+    list-style: none;
 }
 
 .Menu__Option:hover {
@@ -104,7 +106,14 @@ body {
 }
 
 .Main__Section {
-    margin-bottom: 2rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 50px;
+    border-color: var(--rojo);
 }
 
 .Section__Div {
@@ -156,7 +165,7 @@ body {
     background-color: var(--rojo);
     color: #fff;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .Footer__Div .Div__Description {
